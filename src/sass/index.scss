@@ -3,8 +3,107 @@
 body, html {
 	font-size: 16px;	
 }
-
-.content{
+// banner
+.bannerimg{
+	img{
+		width: 100%;
+	}
+}
+// contenido
+.u-contentOne{
 	margin: 0 auto;
-	width: 923px;
+	width: 1000px;
+}
+
+.u-contentTwo{
+	margin: 0 auto;
+	width: 1200px;
+}
+
+
+// bloque mision
+.mission{
+	color: blue;
+	margin: 25px 0 50px 0;
+	&-logo {
+		font-size: 8em;
+	}
+	hr {
+		border: 1px solid blue;
+	}
+	&-title{
+		font-size: 3em;
+	}
+	&-text{
+		display: flex;
+		justify-content: space-between;
+		&-col{
+			width: 48%;
+		}
+	}
+	&-bottom{
+		display: flex;
+		&-svg{
+		font-size: 12em;
+		margin-right: 30px;
+		}
+		&-text{
+			display: column;
+			.title{
+				font-size: 1.3em;
+			}
+			.subtitle{
+				font-weight: normal;
+			}
+		}		
+	}
+}
+// bloque numbers
+.numbers{
+	background-color: blue;
+	color: white;
+	padding: 50px 0;
+	&-cont{
+		text-align: center;
+		&-top{
+		display: flex;
+		justify-content: space-around;
+		.title{
+			font-size: 1em;
+			}
+		}
+		&-middle{
+			display: flex;
+			justify-content: center;
+			.box{
+				font-size: 8em;
+				border: 1px solid white;
+				padding: 15px 30px;
+			}
+		}
+	}
+}
+// bloque case
+.case{
+	margin: 35px;
+	display: flex;
+	color: white;
+	&-img{
+		width: 50%;
+		img {
+			width: 100%;
+		}
+	}
+	&-text{
+		width: 50%;
+		background-color: pink;
+		padding: 30px;
+		&-subtitle{
+			font-size: 0.98em;
+			font-weight: normal;
+		}
+		&-title{
+			
+		}
+	}
 }
