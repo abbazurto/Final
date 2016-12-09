@@ -20,7 +20,6 @@ body, html {
 	width: 1200px;
 }
 
-
 // bloque mision
 .mission{
 	color: blue;
@@ -85,25 +84,163 @@ body, html {
 }
 // bloque case
 .case{
-	margin: 35px;
+	margin: 35px auto;
 	display: flex;
+	flex-direction:space-between;
 	color: white;
-	&-img{
+	&-img{		
 		width: 50%;
-		img {
-			width: 100%;
+		img{			
+			width:100%;
+			height: 100%;			
 		}
 	}
 	&-text{
+		box-sizing:border-box;
 		width: 50%;
 		background-color: pink;
-		padding: 30px;
+		padding: 18px 55px;
 		&-subtitle{
 			font-size: 0.98em;
 			font-weight: normal;
 		}
 		&-title{
+			font-size: 3em;
+		}
+		&-text{
+			width: 100%;
+			line-height: 1.7em;
+			padding-bottom: 15px;
+		}
+		&-button{			
+			background-color: #74e4d0;
+			border-radius: 15px;
+			border-bottom:solid 5px grey;
+			.text{
+				padding: 0 70px;
+				font-weight: bold;
+				color: white;
+				font-size: 1.5em;
+			}
+		}
+		&-button:hover{			
+			background-color: #a7d6c4;
+			border-radius: 15px;
+		}
+	}
+}
+
+// bloque contact
+.contact{
+	background-color:blue;
+	color: white;
+	padding: 50px 0;	
+	&-title{
+		font-size: 3em;
+	}
+	&-form{
+		width: 100%;
+		&-container{		
+		display: flex;
+		justify-content: space-between;
+		.col{
+			width: 48%;
+			padding: 10px 0;			
+			input{
+				box-sizing:border-box;
+				padding: 10px;
+				color: white;
+				background-color: transparent;
+				border-radius: 5px;
+				margin-bottom: 20px;
+				width: 100%;					
+			}
+		}
+	}
+		&-bot{
+		input[type=submit]{
+			background-color:white;
+			color:blue;
+			border-radius:8px;
+			border-bottom:solid 5px grey;
+			padding:15px 0;
+			width:300px;
+			font-size:1.3em;
+			}
+		}
+	}	
+}
+
+// bloque FAQ
+.faq{
+	padding-top: 50px;
+	color: blue;
+	hr {
+		border: 1px solid blue;
+	}
+	&-title{
+		font-size: 3em;
+	}
+	&-list{
+		list-style-type: none;
+		padding: 0px;
+		border-top: 1px solid blue;
+		&-item{
+			border-bottom: 1px solid blue;
+		}
+		.icon{
+			float: right;
+		}
+	}
+}
+// bloque footer
+.footer{
+	background-color: blue;
+	color: white;	
+	width:100%;
+	padding-top: 10px;
+	&-content{			
+		display: flex;	
+		margin: 0 auto;
+		width: 1200px;		
+		&-column{
+			padding-right: 250px;
+			.logo {
+				font-size: 5em;				
+			}
+			&-name{
+
+			}
+		}
+		&-columnTwo{
+			padding-right: 50px;			
+			.hrr{
+				border: 1px solid white;
+			}
+			ul{
+				list-style: none;
+				padding: 0px;
+			}
+			.link{
+				padding-bottom: 20px;
+			}
 			
+		}
+		&-columnForm{
+				input[type=email]{
+					color: white;
+					background-color: transparent;
+					width: 45%;
+					padding: 10px;
+				}	
+				input[type=submit]{
+					font-size: 1em;
+					font-weight: bold;
+					color: white;
+					background-color: transparent;
+					width: 45%;
+					padding: 10px;
+					}						
 		}
 	}
 }
